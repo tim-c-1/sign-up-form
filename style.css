@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+:root {
+    --left-width: 40%;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#left {
+    background: 
+        url(halie-west-25xggax4bSA-unsplash.jpg);
+    width: var(--left-width);
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    
+}
+
+#right {
+    width: calc(100% - var(--left-width));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.bgcredit {
+    position: absolute;
+    left: 25%;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.splash {
+    color: #ccc;
+    text-align: center;
+    font-size: 32px;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+a:visited {
+    color: purple;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
+    padding: 1em;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+fieldset {
+    border-radius: 20px;
+    padding: 15px;
+}
+
+fieldset > div {
+    padding: 15px;
+    min-height: 1px;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    position: relative;
+} 
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputdiv {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    width: calc(50%-20px);
+    margin: 20px;
+    flex: 0 0 auto;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 20px;
+    background-color: #e0dede;
+}
+
+button > a {
+    color: black;
+}
+
+button {
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+}
